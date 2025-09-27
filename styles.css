@@ -1,0 +1,517 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #f5cda8;
+    --bg-color: #141414;
+}
+button{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover{
+    transform: scale(1.05);
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg-color);
+}
+.hero {
+    padding: 0 16px;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    min-height: 400px;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 16px;
+    width: 60%;
+}
+.left .content h1{
+    color: #fff;
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+.left .content .logo{
+    margin-bottom: -50px;
+}
+.left .content .destaque{
+    color: var(--primary-color);
+    font-size: 30px;
+    margin-bottom: 25px;
+    font-weight: 900;
+}
+.left .content p{
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+.left .content a button{
+    background: var(--primary-color);
+    padding: 16px 32px;
+    border-radius: 8px;
+    border: solid 2px #000;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: 40%;
+    min-width: 220px;
+}
+.right .lara {
+    width: 100%;
+    min-width: 180px;
+}
+
+.services{
+    padding: 80px 16px;
+    text-align: center;
+    background: #090909;
+    color: var(--primary-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.card {
+    background-color: var(--bg-color);
+    color: #fff;
+    /* width: 300px; */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.card .button {
+    display: block;
+    background-color: var(--primary-color);
+    color: #1A1A1A;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card .button:hover {
+    filter: brightness(80%);
+    /* background-color: #FFCC00; */
+}
+
+.card .icon {
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.how-work {
+    background: var(--bg-color);
+    color: var(--primary-color);
+    padding: 40px 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.how-work h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    text-align: center;
+}
+.how-work .sub-title{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+    max-width: 800px;
+}
+.how-work-steps {
+    display: flex;
+    flex-direction: row; /* garante que fiquem lado a lado no desktop */
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.how-work-step {
+    background: #1a1a1a;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 24px;
+    flex: 1 1 300px; /* aumenta um pouco a largura mínima */
+    min-width: 220px;
+    max-width: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+.how-work-step:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+}
+
+.how-work-step .icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+
+.how-work-step h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color: var(--primary-color);
+}
+
+.how-work-step p {
+    font-size: 1rem;
+    color: #fff;
+}
+.how-work-step .description {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    background: #232323;
+    border-radius: 6px;
+    padding: 8px 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 6px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    display: block;
+}
+
+/* Destaca os parágrafos .description nos cards "Como funciona" */
+
+/* Estilo do botão/link igual ao primeiro botão de contato */
+.button {
+    display: inline-block;
+    background: var(--primary-color);
+    color: #1A1A1A;
+    text-align: center;
+    padding: 16px 32px;
+    border-radius: 8px;
+    border: solid 2px #090909;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.button:hover {
+    transform: scale(1.05);
+    filter: brightness(80%);
+}
+
+/* Sobre mim */
+.about-me {
+    background: #090909;
+    color: #fff;
+    padding: 60px 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me h2 {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.about-text {
+    flex: 1;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: #fff;
+}
+
+.about-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-photo img {
+    /* width: 260px; */
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
+
+.btn-area {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+
+/* Footer */
+.footer {
+    background: #181818;
+    color: #fff;
+    padding: 32px 16px 12px 16px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.footer-logo img {
+    max-width: 120px;
+    border-radius: 8px;
+}
+
+.footer-info {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.footer-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 0.95rem;
+    color: #bbb;
+}
+
+/* Responsivo */
+@media (max-width: 700px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-logo {
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 900px) {
+    .about-content {
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+    }
+    .how-work-steps {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+    .how-work-step {
+        min-width: 90vw;
+    }
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        min-height: unset;
+    }
+    .left, .right {
+        width: 100%;
+        margin-left: 0;
+        align-items: center;
+        justify-content: center;
+        text-align: center; /* Centraliza o texto */
+    }
+    .left .content {
+        align-items: center; /* Centraliza os itens internos */
+        display: flex;
+        flex-direction: column;
+    }
+    .right .lara {
+        min-width: 150px;
+        max-width: 300px;
+    }
+    .left .content h1 {
+        font-size: 2rem;
+        margin-bottom: 18px;
+    }
+    .left .content .destaque {
+        font-size: 1.3rem;
+        margin-bottom: 16px;
+    }
+    .left .content p {
+        font-size: 1.1rem;
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 700px) {
+    .btn-area {
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+    .about-text {
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Novos estilos para a seção de compromisso */
+.commitment {
+    background: var(--bg-color);
+    color: var(--primary-color);
+    padding: 48px 16px 32px 16px;
+    text-align: center;
+}
+
+.commitment h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: var(--primary-color);
+}
+
+.commitment-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.commitment-card {
+    background: #222;
+    color: #fff;
+    border-radius: 16px;
+    padding: 28px 20px;
+    min-width: 220px;
+    max-width: 320px;
+    flex: 1 1 280px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.commitment-card h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.commitment-card .icon {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.commitment-card p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .commitment-cards {
+        gap: 16px;
+    }
+    .commitment-card {
+        max-width: 90vw;
+        min-width: 180px;
+        padding: 20px 10px;
+    }
+    .commitment h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .commitment-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .commitment-card {
+        width: 100%;
+        max-width: 98vw;
+        margin: 0 auto;
+    }
+}
