@@ -1,3 +1,56 @@
+/* Seção do Mapa */
+.map-section {
+    background: #090909;
+    color: var(--primary-color);
+    padding: 60px 16px 32px 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0;
+}
+
+.map-section h2 {
+    font-size: 2.1rem;
+    margin-bottom: 28px;
+    color: var(--primary-color);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    min-height: 350px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 900px) {
+    .map-container {
+        max-width: 98vw;
+    }
+    .map-section h2 {
+        font-size: 1.3rem;
+    }
+    .map-container iframe {
+        min-height: 220px;
+    }
+}
 *{
     margin: 0;
     padding: 0;
